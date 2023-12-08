@@ -56,10 +56,10 @@ public class JsonResult<T> {
      * 使用自定义异常作为参数传递状态码和提示信息
      * @param msgEnum
      */
-    public JsonResult(BusinessMsgEnum msgEnum) {
-        this.code = msgEnum.code();
-        this.msg = msgEnum.msg();
-    }
+//    public JsonResult(BusinessMsgEnum msgEnum) {
+//        this.code = msgEnum.code();
+//        this.msg = msgEnum.msg();
+//    }
 
     // 省去get和set方法
 }
