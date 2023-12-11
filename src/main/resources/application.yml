@@ -19,3 +19,8 @@ logging:
     console: "%d %-5level [%thread] %logger{36} - %msg%n"
   level:
     root: info
+
+# 配置Mybatis
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
