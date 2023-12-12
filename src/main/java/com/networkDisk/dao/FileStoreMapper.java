@@ -1,8 +1,10 @@
 package com.networkDisk.dao;
 
 import com.networkDisk.entity.FileStore;
+import org.apache.ibatis.annotations.Mapper;
 
 // 与文件夹相关的数据库操作
+@Mapper
 public interface FileStoreMapper {
     public Integer addFileStore(FileStore fileStore); // 添加文件仓库（用户注册时调用）
     public FileStore getFileStoreByUserId(Integer userId); // 根据用户id获得文件仓库

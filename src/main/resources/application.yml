@@ -4,10 +4,27 @@ server:
 
 # 数据库
 spring:
+  # 配置邮件任务
+  mail:
+    username: 1065394472@qq.com # 你需要修改此处为你的QQ邮箱
+    password: mrckipfthphabbag # 你需要修改此处为QQ邮箱独立密码
+    host: smtp.qq.com
+    port: 465
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          socketFactory:
+            port: 465
+            class: javax.net.ssl.SSLSocketFactory
+            fallback: false
   datasource:
     url: jdbc:mysql://localhost:3306/localhost?useUnicode=true&characterEncoding=UTF-8
     username: root
-    password: 123456
+    password: Mark20030104
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 # 日志

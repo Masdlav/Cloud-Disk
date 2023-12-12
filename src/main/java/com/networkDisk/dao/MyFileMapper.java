@@ -2,10 +2,12 @@ package com.networkDisk.dao;
 
 import com.networkDisk.entity.FileStoreStatistics;
 import com.networkDisk.entity.MyFile;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
 // 与文件相关的数据库操作
+@Mapper
 public interface MyFileMapper {
     Integer addFileByFileStoreId(MyFile myFile); // 添加文件
     Integer updateFileByFileId(MyFile myFile); // 根据文件id修改文件

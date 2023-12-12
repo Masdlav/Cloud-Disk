@@ -2,9 +2,11 @@ package com.networkDisk.dao;
 
 import com.networkDisk.entity.FileFolder;
 import com.networkDisk.entity.MyFile;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
+@Mapper
 public interface FileFolderMapper {
     Integer deleteFileFolderById(Integer fileFolderId); // 根据文件夹的id删除文件夹
     Integer deleteFileFolderByParentFolderId(Integer parentFolderId); // 根据父文件夹的id删除文件夹

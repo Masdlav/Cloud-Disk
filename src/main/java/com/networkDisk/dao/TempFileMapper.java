@@ -3,10 +3,12 @@ package com.networkDisk.dao;
 import com.networkDisk.entity.FileFolder;
 import com.networkDisk.entity.MyFile;
 import com.networkDisk.entity.TempFile;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
 // (TempFile)表数据库访问层
+@Mapper
 public interface TempFileMapper {
     int insert(TempFile tempFile); // 添加TempFile
     int deleteById(Integer fileId); // 删除TempFile
